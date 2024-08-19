@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lustria', serif;
+    background: rgba(220, 224, 225, 0.47);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+  .nav-link {
+    position: relative;
+    transition: all 0.4s;
+  }
+  
+  .nav-link:hover {
+    color: black;
+  }
+  
+  .nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color:red;
+    display: block;
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s; 
+  }
+  
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+
+  /* curosel */
+  .carousel-inner .carousel-item .carousel-caption {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-inner .carousel-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.653);
+}
+
+.carousel-inner .carousel-caption p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Additional custom styles for responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption {
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+.MissionImg {
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONTACT PAGE start */
+.container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+.contactUs{
+        width: 50%;
+        padding-bottom: 50px;
+}
+.contactUs h1{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff1010;
+}
+/* CONTACT PAGE end */
+/* Classes */
+.container-image{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Set initial opacity to 0 */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    cursor: pointer;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-image:hover .overlay {
+    opacity: 3; /* Change opacity to 1 on hover */
+}
+
+
+/* Navbar dropdown hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  
+  /* Adjusting dropdown to open without click */
+  .dropdown-menu {
+    margin-top: 0; /* Remove margin to align with navbar */
+  }
+  
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.694);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+/* gallery starts */
+.container-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container-gallery .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.container-gallery .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;   
+}
+.container-gallery .heading h3 span{
+font-weight: 100;
+}
+
+
+
+
+
+.update-Card .Update-Pic .Update-Caption {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update-Card .Update-Pic::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.653);
+}
+
+.update-Card .Update-Caption p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    text-align: center;
+}
